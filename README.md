@@ -1,5 +1,9 @@
 # Distributed Key-Value Store
 
+## Authors
+- **Eshwar Dhande [23210038]**
+- **Aamod Thakur [23210001]**
+
 ## Overview
 This project implements a distributed key-value store using a **shared-nothing architecture** with **gRPC-based communication**. The system supports multiple nodes, replication, and failure recovery, ensuring **eventual consistency** and optimized **performance** under different workloads.
 
@@ -70,11 +74,10 @@ PYTHONPATH=$(pwd) pytest -v tests/
 ```
 
 ## Documentation
-- **API Reference**: `docs/api_reference.md`
-- **Design Decisions**: `docs/design_decisions.md`
-- **Project Report**: `docs/project_report.pdf`
+- **[API Reference](/docs/api_reference.md)**: `docs/api_reference.md`    
 
-## Authors
-- Eshwar Dhande [23210038]
-- Aamod Thakur [23210001]
+- **[Design Decisions](/docs/design_decisions.md)**: `docs/design_decisions.md`    
+- **[Project Report](/docs/Project_report.md)**: `docs/Project_report.md`    
+
+
 
