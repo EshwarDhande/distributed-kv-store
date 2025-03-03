@@ -1,4 +1,2 @@
-2025-03-03 17:50:46,305 - INFO - Server initialized on port 50052 with peers: ['localhost:50051', 'localhost:50053']
-2025-03-03 17:50:46,307 - INFO - Async gRPC Server started on port 50052
-2025-03-03 17:50:54,292 - INFO - Shutting down server gracefully...
-2025-03-03 17:50:54,297 - INFO - Server shutdown complete.
+2025-03-03 22:52:38,423 - INFO - Server initialized on port 50052 with peers: ['localhost:50051', 'localhost:50053']
+2025-03-03 22:52:38,424 - INFO - Async gRPC Server started on port 50052

@@ -1,8 +1,43 @@
-2025-03-03 17:50:42,195 - INFO - Server initialized on port 50051 with peers: ['localhost:50052', 'localhost:50053']
-2025-03-03 17:50:42,197 - INFO - Async gRPC Server started on port 50051
-2025-03-03 17:50:54,236 - INFO -  DEBUG: get() returned 'before_crash' for key 'crash_test'
-2025-03-03 17:50:54,261 - INFO - PUT request received for key: replica_key, value: replicated_value
-2025-03-03 17:50:54,264 - INFO -  DEBUG: get() returned 'replicated_value' for key 'replica_key'
-2025-03-03 17:50:54,267 - INFO - Put operation stored 'replicated_value' for key 'replica_key'
-2025-03-03 17:50:54,292 - INFO - Shutting down server gracefully...
-2025-03-03 17:50:54,300 - INFO - Server shutdown complete.
+2025-03-03 22:52:36,052 - INFO - Server initialized on port 50051 with peers: ['localhost:50052', 'localhost:50053']
+2025-03-03 22:52:36,056 - INFO - Async gRPC Server started on port 50051
+2025-03-03 22:54:49,176 - INFO - PUT request received for key: first_key, value: 23210038
+2025-03-03 22:54:49,182 - INFO -  DEBUG: get() returned '' for key 'first_key'
+2025-03-03 22:54:49,183 - INFO - Put operation stored '' for key 'first_key'
+2025-03-03 22:55:01,330 - INFO -  DEBUG: get() returned '23210038' for key 'first_key'
+2025-03-03 22:55:35,700 - INFO - PUT request received for key: first_key, value: 210
+2025-03-03 22:55:35,701 - INFO -  DEBUG: get() returned '23210038' for key 'first_key'
+2025-03-03 22:55:35,702 - INFO - Put operation stored '23210038' for key 'first_key'
+2025-03-03 22:56:23,717 - INFO - PUT request received for key: first_key, value: 23210038
+2025-03-03 22:56:23,718 - INFO -  DEBUG: get() returned '210' for key 'first_key'
+2025-03-03 22:56:23,718 - INFO - Put operation stored '210' for key 'first_key'
+2025-03-03 22:56:34,338 - INFO -  DEBUG: get() returned '23210038' for key 'first_key'
+2025-03-03 22:56:45,746 - INFO - PUT request received for key: first_key, value: 564
+2025-03-03 22:56:45,748 - INFO -  DEBUG: get() returned '23210038' for key 'first_key'
+2025-03-03 22:56:45,748 - INFO - Put operation stored '23210038' for key 'first_key'
+2025-03-03 22:59:51,812 - INFO -  DEBUG: get() returned '' for key 'second'
+2025-03-03 23:08:18,084 - INFO - PUT request received for key: foo, value: bar
+2025-03-03 23:08:18,086 - INFO -  DEBUG: get() returned '' for key 'foo'
+2025-03-03 23:08:18,087 - INFO - Put operation stored '' for key 'foo'
+2025-03-03 23:08:18,088 - INFO - PUT request received for key: hello, value: world
+2025-03-03 23:08:18,091 - INFO -  DEBUG: get() returned '' for key 'hello'
+2025-03-03 23:08:18,092 - INFO - Put operation stored '' for key 'hello'
+2025-03-03 23:08:18,095 - INFO -  DEBUG: get() returned 'bar' for key 'foo'
+2025-03-03 23:08:18,097 - INFO -  DEBUG: get() returned '' for key 'unknown_key'
+2025-03-03 23:15:53,235 - INFO - PUT request received for key: second_key, value: 256
+2025-03-03 23:15:53,236 - INFO -  DEBUG: get() returned '' for key 'second_key'
+2025-03-03 23:15:53,237 - INFO - Put operation stored '' for key 'second_key'
+2025-03-03 23:16:04,965 - INFO -  DEBUG: get() returned '256' for key 'second_key'
+2025-03-03 23:16:33,979 - INFO - PUT request received for key: second_key, value: 897
+2025-03-03 23:16:33,980 - INFO -  DEBUG: get() returned '256' for key 'second_key'
+2025-03-03 23:16:33,981 - INFO - Put operation stored '256' for key 'second_key'
+2025-03-03 23:17:21,221 - INFO - PUT request received for key: second_key, value: 123
+2025-03-03 23:17:21,223 - INFO -  DEBUG: get() returned '897' for key 'second_key'
+2025-03-03 23:17:21,224 - INFO - Put operation stored '897' for key 'second_key'
+2025-03-03 23:18:05,890 - INFO - PUT request received for key: foo, value: bar
+2025-03-03 23:18:05,891 - INFO -  DEBUG: get() returned 'bar' for key 'foo'
+2025-03-03 23:18:05,892 - INFO - Put operation stored 'bar' for key 'foo'
+2025-03-03 23:18:05,893 - INFO - PUT request received for key: hello, value: world
+2025-03-03 23:18:05,896 - INFO -  DEBUG: get() returned 'world' for key 'hello'
+2025-03-03 23:18:05,897 - INFO - Put operation stored 'world' for key 'hello'
+2025-03-03 23:18:05,900 - INFO -  DEBUG: get() returned 'bar' for key 'foo'
+2025-03-03 23:18:05,902 - INFO -  DEBUG: get() returned '' for key 'unknown_key'

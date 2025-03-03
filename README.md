@@ -80,4 +80,80 @@ PYTHONPATH=$(pwd) pytest -v tests/
 - **[Project Report](/docs/Project_report.md)**: `docs/Project_report.md`    
 
 
+---
+
+### **Client CLI Usage Instructions**
+
+### **Interactive Mode (`client_cli.py`)**
+The interactive CLI allows users to send **Put** and **Get** requests to the distributed key-value store via terminal input.
+
+### **Running the Interactive CLI**
+Run the script directly:
+```bash
+python client_cli.py
+```
+
+### **Available Commands**
+- `put <key> <value>` – Stores a key-value pair.
+- `get <key>` – Retrieves the value of a key.
+- `exit` – Quits the CLI.
+
+### **Example Usage**
+```bash
+kvstore> put foo bar
+Old Value: None
+
+kvstore> get foo
+Value: bar
+
+kvstore> get unknown_key
+Value: Key not found
+
+kvstore> exit
+Exiting...
+```
+
+---
+
+### **Batch Mode (`client_batch.py`)**
+The batch CLI reads **multiple** `put` and `get` commands from a text file and executes them sequentially.
+
+### **Running the Batch CLI**
+```bash
+python client_batch.py /path/to/commands.txt
+```
+Where `/path/to/commands.txt` is a file containing the list of key-value operations.
+
+### **Example `commands.txt`**
+```
+put key1 value1
+put key2 value2
+get key1
+get unknown_key
+```
+
+### **Expected Output**
+```
+Batch Execution Results:
+PUT key1 -> Old Value: None
+PUT key2 -> Old Value: None
+GET key1 -> Value: value1
+GET unknown_key -> Value: Key not found
+```
+
+### **Error Handling**
+- If the file does not exist:  
+  ```
+  Error: File not found: commands.txt
+  ```
+- If an invalid command is present:  
+  ```
+  Invalid command: delete key1
+  ```
+
+These CLI tools make it easy to interact with the key-value store both **manually** and through **batch processing**. 
+
+---
+
+
 

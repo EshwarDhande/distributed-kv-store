@@ -1,0 +1,4 @@
+put foo bar
+put hello world
+get foo
+get unknown_key
