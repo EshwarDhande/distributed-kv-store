@@ -1,0 +1,8 @@
+2025-03-03 17:50:42,195 - INFO - Server initialized on port 50051 with peers: ['localhost:50052', 'localhost:50053']
+2025-03-03 17:50:42,197 - INFO - Async gRPC Server started on port 50051
+2025-03-03 17:50:54,236 - INFO -  DEBUG: get() returned 'before_crash' for key 'crash_test'
+2025-03-03 17:50:54,261 - INFO - PUT request received for key: replica_key, value: replicated_value
+2025-03-03 17:50:54,264 - INFO -  DEBUG: get() returned 'replicated_value' for key 'replica_key'
+2025-03-03 17:50:54,267 - INFO - Put operation stored 'replicated_value' for key 'replica_key'
+2025-03-03 17:50:54,292 - INFO - Shutting down server gracefully...
+2025-03-03 17:50:54,300 - INFO - Server shutdown complete.

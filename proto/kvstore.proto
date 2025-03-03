@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package kvstore;
+
+service KeyValueStore {
+  rpc Put(KeyValue) returns (OldValue);
+  rpc Get(Key) returns (Value);
+  rpc Delete(Key) returns (Empty);
+  rpc ListKeys(Empty) returns (KeyList);
+  rpc Backup(Empty) returns (BackupStatus);
+  rpc Ping(PingRequest) returns (PingResponse);
+}
+
+message KeyValue {
+  string key = 1;  // Max length: 128 bytes (ASCII only)
+  string value = 2;  // Max length: 2048 bytes (ASCII only)
+}
+
+message Key {
+  string key = 1;  // Max length: 128 bytes (ASCII only)
+}
+
+message Value {
+  string value = 1;  // Max length: 2048 bytes (ASCII only)
+}
+
+message OldValue {
+  string old_value = 1;  // Stores previous value, if any
+}
+
+message KeyList {
+  repeated string keys = 1;
+}
+
+message BackupStatus {
+  bool success = 1;
+  string message = 2;
+}
+
+message Empty {}
+
+// New Ping messages
+message PingRequest {}  // Empty request for health check
+message PingResponse {
+  string message = 1;  // Server can return "OK" or a status message
+}

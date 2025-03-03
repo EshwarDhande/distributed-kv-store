@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.2, pytest-8.3.5, pluggy-1.5.0 -- /home/eshwar/anaconda3/bin/python
+cachedir: .pytest_cache
+rootdir: /home/eshwar/code_wsl/616/distributed-kv-store
+plugins: asyncio-0.25.3, anyio-4.2.0
+asyncio: mode=Mode.STRICT, asyncio_default_fixture_loop_scope=None
+collecting ... collected 8 items
+
+tests/test_correctness.py::test_put_get_consistency PASSED               [ 12%]
+tests/test_correctness.py::test_overwrite_key PASSED                     [ 25%]
+tests/test_correctness.py::test_delete_key PASSED                        [ 37%]
+tests/test_correctness.py::test_list_keys PASSED                         [ 50%]
+tests/test_failures.py::test_recovery_from_failure PASSED                [ 62%]
+tests/test_failures.py::test_replication_after_restart PASSED            [ 75%]
+tests/test_performance.py::test_throughput PASSED                        [ 87%]
+tests/test_performance.py::test_latency PASSED                           [100%]
+
+============================== 8 passed in 26.06s ==============================
