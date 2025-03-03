@@ -4,6 +4,8 @@
 - **Eshwar Dhande [23210038]**
 - **Aamod Thakur [23210001]**
 
+- **[Quick Report](/docs/616_prj1_report_slip1.pdf)**: `/docs/616_prj1_report_slip1.pdf`
+
 ## Overview
 This project implements a distributed key-value store using a **shared-nothing architecture** with **gRPC-based communication**. The system supports multiple nodes, replication, and failure recovery, ensuring **eventual consistency** and optimized **performance** under different workloads.
 
